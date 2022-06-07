@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+body{
+	background: #eee;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	min-height: 100vh;
+}
+.main{
+	width: 227px;
+	height: 60px;
+	background: #eee;
+	align-items: center;
+	display: flex;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: .3s all;
+	transition-delay: .2s;
+	box-shadow: 0px 8px 30px rgb(178, 188, 189);
+}
+i{
+	color: #b4b4b4;
+	font-size: 2em;
+	margin: 10px;
+	transition: .3s ease-in-out;
+	padding: 10px;
+}
+i:hover{
+	color: #7a7675;
+}
+label{
+	
+}
