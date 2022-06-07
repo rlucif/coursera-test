@@ -20,7 +20,7 @@ body{
 	cursor: pointer;
 	transition: .3s all;
 	transition-delay: .2s;
-	box-shadow: 0px 8px 30px rgb(178, 188, 189);
+	box-shadow: 0px 8px 30px rgba(178, 188, 189);
 }
 i{
 	color: #b4b4b4;
@@ -33,5 +33,48 @@ i:hover{
 	color: #7a7675;
 }
 label{
-	
+	position: absolute;
+	right: 42%;
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	background: #2d5ded;
+	color: #fff;
+	font-size: 2em;
+	border-radius: 50%;
+	transition: .4s all;
+	cursor: pointer;
+	line-height: 2px;
+}
+#chk:checked ~ label{
+	transform: translateX(-335%) rotateZ(404deg);
+}
+input[type=text]{
+	position: absolute;
+	right: 42%;
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+	color: #eee;
+	background: transparent;
+	border: none;
+	outline: none;
+	transition: .4s ease;
+	visibility: hidden;
+	text-align: center;
+}
+input[type=text]::placeholder{
+	color: #eee;
+	font-size: 18px;
+}
+#chk:checked ~ input[type=text]{
+	width: 15.5%;
+	background: #7491e8;
+	border-radius: 40px;
+	visibility: visible;
+}
+#chk:checked ~ .main{
+	box-shadow: 0 0 0 50em #2d5ded;
 }
